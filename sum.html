@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Sum</title>
+</head>
+<body>
+Num1:<input type="text" value="0" id="txt1">
+Num2:<input type="text" value="0" id="txt2">
+Result:<input type="text" value="0" id="txt3">
+<input type="button" value="OK" onclick="sum()">
+
+</body>
+
+<script>
+	function sum()
+	{
+		var txt1 = document.getElementById('txt1').value;
+		var txt2 = document.getElementById('txt2').value;
+		 var total= parseFloat(txt1)+parseFloat(txt2);
+		 document.getElementById('txt3').value=total;
+
+	}
+
+</script>
+</html>

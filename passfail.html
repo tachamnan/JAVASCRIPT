@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing pass or fail</title>
+</head>
+<body>
+<input type="text" id="tx_total" onkeyup="show_result()" autocomplete="off">
+<input type="button" value="Result" onclick="show_result()">
+<input type="text" id="txt_result">
+
+</body>
+<script>
+	
+	function show_result()
+	{
+		 var total=document.getElementById('tx_total').value;
+		 if(total>=50)
+		 {
+		 	document.getElementById('txt_result').value='pass';
+		 }
+		 else
+		 {
+		 	document.getElementById('txt_result').value='fail';
+		 }
+	}
+</script>
+</html>

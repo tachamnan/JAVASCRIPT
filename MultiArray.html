@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+<h2>Test MultiArray</h2>
+<table border="1">
+	<thead>
+		<tr>
+			<th>No</th>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>Gender</th>
+			<th>Age</th>
+		</tr>
+	</thead>
+	<tbody id="show">
+		
+	</tbody>
+</table>
+</center>
+<script type="text/javascript">
+	var person = [
+	{firsName: "Sok1",lastName: "Pisey",age:33,gender: "Female"},
+	{firsName: "Sok2",lastName: "Pisey",age:34,gender: "Male"},
+	{firsName: "Sok3",lastName: "Pisey",age:35,gender: "Female"},
+	{firsName: "Sok4",lastName: "Pisey",age:36,gender: "Female"},
+	{firsName: "Sok5",lastName: "Pisey",age:37,gender: "Female"},
+	{firsName: "Sok6",lastName: "Pisey",age:38,gender: "Female"},
+	{firsName: "Sok7",lastName: "Pisey",age:39,gender: "Female"},
+	{firsName: "Sok8",lastName: "Pisey",age:40,gender: "Male"},
+	{firsName: "Sok9",lastName: "Pisey",age:41,gender: "Female"},
+	{firsName: "Sok10",lastName: "Pisey",age:42,gender: "Male"},
+	{firsName: "Sok11",lastName: "Pisey",age:43,gender: "Female"},
+	{firsName: "Sok12",lastName: "Pisey",age:53,gender: "Male"},
+	];
+	var data = '';
+	for(var i=0;i<person.length;i++){
+		 data+= '<tr>'+
+					'<td>'+(i+1)+'</td>'+
+					'<td>'+person[i].firsName+'</td>'+
+					'<td>'+person[i].lastName+'</td>'+
+					'<td>'+person[i].gender+'</td>'+
+					'<td>'+person[i].age+'</td>'+
+				'</tr>';
+	}
+	document.getElementById('show').innerHTML = data;
+</script>
+
+</body>
+</html>

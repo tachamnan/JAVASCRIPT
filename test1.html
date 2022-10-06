@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test JavaScript</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+<img src="images/img1.jpg" width="300" id="img" onmouseover="ch_img()" onmouseout="old_img()">
+<br>
+<input type="button" value="Change Img" onclick="ch_img()">
+<input type="button" value="Hide Content" onclick="hide()">
+<input type="button" value="Show Content" onclick="show()">
+<div id="box1">Hello World</div>
+<input type="button" value="Click Me" onclick="test()">
+<input type="button" value="Change Content" onclick="ch_cn()">
+<input type="button" value="Change CSS" onclick="ch_css()">
+
+
+</body>
+
+
+<script>
+	
+function test(){
+	alert("yes");
+}
+function ch_img(){
+	document.getElementById("img").setAttribute("src","images/img2.jpg");
+}
+function old_img(){
+	document.getElementById("img").setAttribute("src","images/img1.jpg");
+}	
+function ch_cn(){
+	document.getElementById('box1').innerHTML = "Chenged Me";
+}
+function ch_css(){
+	document.getElementById('box1').style.color = 'red';
+}
+function hide(){
+	document.getElementById('box1').style.display = 'none';
+}
+function show(){
+	document.getElementById('box1').style.display = 'block';
+}
+</script>
+</html>

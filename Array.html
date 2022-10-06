@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>test array one value</h2>
+<h3 id="car"></h3>
+<script type="text/javascript">
+	var cars = [
+		"BMW",
+		"Taxi",
+		"Toyota"
+	];
+	document.getElementById("car").innerHTML = cars[1];
+</script>
+<h2>test loop in array</h2>
+
+<script type="text/javascript">
+	var	cars = [
+		"BMW",
+		"Taxi",
+		"Toyota",
+		"Pruis"
+	];
+	// document.getElementById("car").innerHTML = cars[3];
+	 // console.log(cars.length);
+	for(var i=0; i<cars.length; i++){
+		document.write(cars[i]+'<br>');
+
+	}
+	var number = [1,2,3,4,5,6,7,8];
+	var txt = '';
+	function myArt(value){
+		txt=txt + value + '<br>';
+	}
+	number.forEach(myArt);
+	document.getElementById('car').innerHTML = txt;
+</script>
+
+</body>
+</html>

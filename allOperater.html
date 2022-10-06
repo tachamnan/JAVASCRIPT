@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test operator</title>
+</head>
+
+<body>
+Num1: <input type="text" value="0" id="txt1"><br>
+Num2: <input type="text" value="0" id="txt2"><br>
+Result: <input type="text" value="0" id="txt_result"><br><br>
+<input type="button" value="+" onClick="sum()">
+<input type="button" value="-" onclick="dok()">
+<input type="button" value="*" onclick="kun()">
+<input type="button" value="%" onclick="jek()">
+
+</body>
+<script>
+	var num1=document.getElementById('txt1');
+	var num2=document.getElementById('txt2');
+
+	function sum()
+	{
+		var total= parseFloat(num1.value) + parseFloat(num2.value);
+		document.getElementById('txt_result').value=total;
+	}
+	function dok()
+	{
+		var total= parseFloat(num1.value) - parseFloat(num2.value);
+		document.getElementById('txt_result').value=total;
+	}
+	function kun()
+	{
+		var total= parseFloat(num1.value) * parseFloat(num2.value);
+		document.getElementById('txt_result').value=total;
+	}
+	function jek()
+	{
+		var total= parseFloat(num1.value) % parseFloat(num2.value);
+		document.getElementById('txt_result').value=total;
+	}
+</script>
+</html>
